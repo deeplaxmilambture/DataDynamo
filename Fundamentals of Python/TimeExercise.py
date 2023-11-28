@@ -1,5 +1,12 @@
 '''
-Use time module
+Author: Deeplaxmi Lambture
+Course: 100days of Python (Code with Harry)
+
+'''
+
+
+'''
+Use time module and learn different time.strftime() formats
 '''
 
 

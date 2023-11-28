@@ -79,6 +79,8 @@ print("\n",stringname[4:9], len(stringname[4:9]), stringname[:10], stringname[:]
 nm="Harry"
 print(nm[-4:-2])
 
+
+
 '''
 String functions:
 
@@ -112,7 +114,7 @@ print(String1.title())
 if, if-else, if-else elif, nested statements
 '''
 
-age = int(input("Enter your age: "))
+age = 20
 if(age<18):
     print("you are an underage person")
 elif(age<=30):
@@ -126,8 +128,77 @@ else:
     print("you are an full-grown adult")
 
 
+import time
+hour = int(time.strftime("%H"))
+print(hour)
+if(hour > 0 and hour < 12):
+    print("Good morning")
+elif(hour > 12 and hour < 16):
+    print("Good Afternoon")
+elif(hour > 16 and hour < 18):
+    print("Good evening")
+else:
+    print("Good Night!")
+
+
+'''
+match case (switch case)
+'''
+
+x = 90
+match x:
+    case 0: print("x is 0")
+    case 4: print("x is 4")
+    case _: print(x)
+
+match x:
+    case 0: print("x is 0")
+    case 4: print("x is 4")
+    case _ if x==90 : print(" x is  90")
+    case _ if x!=80: print("x is not 80")
+    case _: print(x)
 
 
 
+''' for loops '''
+
+name = 'Deeplaxmi'
+for i in name:
+    print(i, end=", ")
+    if(i ==i):
+        print("you are one in millions")
+
+colors = ["red", "orange", "yellow"]
+for color in colors:
+    print(color)
+    for i in color: 
+        print(i)
 
 
+for k in range(5):
+    print(k)
+
+
+for k in range(1,5):
+    print(k)
+
+for  k in range(0,16,3):
+    print(k)
+
+
+'''
+while loop
+'''
+
+count = 5
+while(count > 0):
+    print(count)
+    count = count-1
+
+
+
+while(count > 0):
+    print(count)
+    count = count-1
+else:
+    print("I am in the loop")
